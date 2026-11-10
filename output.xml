@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.5.1 (Python 3.14.10 on darwin)" generated="2026-11-09T17:15:59.326343" rpa="false" schemaversion="5">
+<robot generator="Robot 7.5.1 (Python 3.14.10 on darwin)" generated="2026-11-10T10:25:40.381063" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/Users/wilmo/School/OhTu/webcounter/src/tests">
 <suite id="s1-s1" name="Increment" source="/Users/wilmo/School/OhTu/webcounter/src/tests/increment.robot">
 <kw name="Open And Configure Browser" owner="resource" type="SETUP">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-11-09T17:15:59.392352" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 500.0, "timeout": 30000.0, "tracesDir": "/Users/wilmo/School/OhTu/webcounter/browser/traces/temp/206861cd-cb20-42aa-b037-6c9ea5aaf2db"}</msg>
-<msg time="2026-11-09T17:15:59.392685" level="INFO">Starting Browser process /Users/wilmo/School/OhTu/webcounter/.venv/lib/python3.14/site-packages/BrowserBatteries/bin/wrapper/index.js using at 127.0.0.1:51525</msg>
-<msg time="2026-11-09T17:16:00.858317" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":500,"timeout":30000,"tracesDir":"/Users/wilmo/School/OhTu/webcounter/browser/traces/temp/206861cd-cb20-42aa-b037-6c9ea5aaf2db"}</msg>
+<msg time="2026-11-10T10:25:40.447160" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 500.0, "timeout": 30000.0, "tracesDir": "/Users/wilmo/School/OhTu/webcounter/browser/traces/temp/ddf22314-aa9b-48e2-8dcc-eb309749c9bc"}</msg>
+<msg time="2026-11-10T10:25:40.447521" level="INFO">Starting Browser process /Users/wilmo/School/OhTu/webcounter/.venv/lib/python3.14/site-packages/BrowserBatteries/bin/wrapper/index.js using at 127.0.0.1:60601</msg>
+<msg time="2026-11-10T10:25:41.922481" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":500,"timeout":30000,"tracesDir":"/Users/wilmo/School/OhTu/webcounter/browser/traces/temp/ddf22314-aa9b-48e2-8dcc-eb309749c9bc"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=False</arg>
 <arg>slowMo=${DELAY}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-11-09T17:15:59.392065" elapsed="1.466476"/>
+<status status="PASS" start="2026-11-10T10:25:40.446871" elapsed="1.475869"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2026-11-09T17:16:00.859593" level="INFO">{
+<msg time="2026-11-10T10:25:41.923927" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -26,48 +26,48 @@
   "reducedMotion": "no-preference",
   "serviceWorkers": "allow",
   "viewport": {
-    "width": 1280,
-    "height": 720
+    "height": 720,
+    "width": 1280
   }
 }</msg>
-<msg time="2026-11-09T17:16:00.866516" level="INFO">Successfully created context. </msg>
-<msg time="2026-11-09T17:16:00.866573" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<msg time="2026-11-10T10:25:41.929664" level="INFO">Successfully created context. </msg>
+<msg time="2026-11-10T10:25:41.929712" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 720, 'width': 1280}}</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2026-11-09T17:16:00.858889" elapsed="0.007728"/>
+<status status="PASS" start="2026-11-10T10:25:41.923194" elapsed="0.006558"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2026-11-09T17:16:01.551024" level="INFO">Successfully initialized new page object and opened url: about:blank</msg>
+<msg time="2026-11-10T10:25:42.567589" level="INFO">Successfully initialized new page object and opened url: about:blank</msg>
 <arg>about:blank</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-11-09T17:16:00.866736" elapsed="0.684751"/>
+<status status="PASS" start="2026-11-10T10:25:41.929859" elapsed="0.638290"/>
 </kw>
-<status status="PASS" start="2026-11-09T17:15:59.391812" elapsed="2.159985"/>
+<status status="PASS" start="2026-11-10T10:25:40.446618" elapsed="2.121924"/>
 </kw>
 <test id="s1-s1-t1" name="At start the counter is zero" line="7">
 <kw name="Go To" owner="Browser">
-<msg time="2026-11-09T17:16:02.087968" level="INFO">Successfully opened URL http://localhost:5001</msg>
+<msg time="2026-11-10T10:25:43.100608" level="INFO">Successfully opened URL http://localhost:5001</msg>
 <arg>${HOME_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Navigates to the given ``url``.</doc>
-<status status="PASS" start="2026-11-09T17:16:01.564450" elapsed="0.523897"/>
+<status status="PASS" start="2026-11-10T10:25:42.579970" elapsed="0.521100"/>
 </kw>
 <kw name="Get Title" owner="Browser">
-<msg time="2026-11-09T17:16:02.094351" level="INFO">Title: 'Laskuri'</msg>
+<msg time="2026-11-10T10:25:43.109965" level="INFO">Title: 'Laskuri'</msg>
 <arg>==</arg>
 <arg>Laskuri</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the title of the current page.</doc>
-<status status="PASS" start="2026-11-09T17:16:02.088863" elapsed="0.005608"/>
+<status status="PASS" start="2026-11-10T10:25:43.102632" elapsed="0.007461"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-11-09T17:16:02.123761" level="INFO">Text: ['Ohtulaskuri\nnappia painettu 0 kertaa\nPaina\nNollaa']</msg>
+<msg time="2026-11-10T10:25:43.141284" level="INFO">Text: ['Ohtulaskuri\nnappia painettu 0 kertaa\nPaina\nNollaa']</msg>
 <arg>body</arg>
 <arg>*=</arg>
 <arg>nappia painettu 0 kertaa</arg>
@@ -75,37 +75,37 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-11-09T17:16:02.094750" elapsed="0.029087"/>
+<status status="PASS" start="2026-11-10T10:25:43.110400" elapsed="0.030959"/>
 </kw>
-<status status="PASS" start="2026-11-09T17:16:01.552087" elapsed="0.571905"/>
+<status status="PASS" start="2026-11-10T10:25:42.568969" elapsed="0.572556"/>
 </test>
 <test id="s1-s1-t2" name="When button pressed twice the counter is two" line="12">
 <kw name="Go To" owner="Browser">
-<msg time="2026-11-09T17:16:02.639458" level="INFO">Successfully opened URL http://localhost:5001</msg>
+<msg time="2026-11-10T10:25:43.658996" level="INFO">Successfully opened URL http://localhost:5001</msg>
 <arg>${HOME_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Navigates to the given ``url``.</doc>
-<status status="PASS" start="2026-11-09T17:16:02.128679" elapsed="0.511038"/>
+<status status="PASS" start="2026-11-10T10:25:43.148589" elapsed="0.510937"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-11-09T17:16:02.640909" level="INFO">Clicks the element 'button &gt;&gt; text=Paina'.</msg>
+<msg time="2026-11-10T10:25:43.662948" level="INFO">Clicks the element 'button &gt;&gt; text=Paina'.</msg>
 <arg>button &gt;&gt; text=Paina</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-11-09T17:16:02.640115" elapsed="0.550617"/>
+<status status="PASS" start="2026-11-10T10:25:43.660401" elapsed="0.548845"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-11-09T17:16:03.193452" level="INFO">Clicks the element 'button &gt;&gt; text=Paina'.</msg>
+<msg time="2026-11-10T10:25:44.211703" level="INFO">Clicks the element 'button &gt;&gt; text=Paina'.</msg>
 <arg>button &gt;&gt; text=Paina</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-11-09T17:16:03.192195" elapsed="0.550121"/>
+<status status="PASS" start="2026-11-10T10:25:44.210671" elapsed="0.549821"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-11-09T17:16:03.773934" level="INFO">Text: ['Ohtulaskuri\nnappia painettu 2 kertaa\nPaina\nNollaa']</msg>
+<msg time="2026-11-10T10:25:44.793335" level="INFO">Text: ['Ohtulaskuri\nnappia painettu 2 kertaa\nPaina\nNollaa']</msg>
 <arg>body</arg>
 <arg>*=</arg>
 <arg>nappia painettu 2 kertaa</arg>
@@ -113,30 +113,152 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-11-09T17:16:03.742999" elapsed="0.031013"/>
+<status status="PASS" start="2026-11-10T10:25:44.761461" elapsed="0.031958"/>
 </kw>
-<status status="PASS" start="2026-11-09T17:16:02.126831" elapsed="1.647356"/>
+<status status="PASS" start="2026-11-10T10:25:43.144709" elapsed="1.648875"/>
 </test>
 <kw name="Close Browser" owner="Browser" type="TEARDOWN">
-<msg time="2026-11-09T17:16:03.846123" level="INFO">Closed browser</msg>
+<msg time="2026-11-10T10:25:44.876911" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-11-09T17:16:03.777348" elapsed="0.068863"/>
+<status status="PASS" start="2026-11-10T10:25:44.796473" elapsed="0.080534"/>
 </kw>
-<status status="PASS" start="2026-11-09T17:15:59.338033" elapsed="4.508226"/>
+<status status="PASS" start="2026-11-10T10:25:40.393340" elapsed="4.483723"/>
 </suite>
-<status status="PASS" start="2026-11-09T17:15:59.327023" elapsed="4.521148"/>
+<suite id="s1-s2" name="Reset" source="/Users/wilmo/School/OhTu/webcounter/src/tests/reset.robot">
+<kw name="Open And Configure Browser" owner="resource" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-11-10T10:25:44.882306" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 500.0, "timeout": 30000.0, "tracesDir": "/Users/wilmo/School/OhTu/webcounter/browser/traces/temp/08adba44-9e83-4d1c-b674-106e861acc5f"}</msg>
+<msg time="2026-11-10T10:25:45.036382" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":500,"timeout":30000,"tracesDir":"/Users/wilmo/School/OhTu/webcounter/browser/traces/temp/08adba44-9e83-4d1c-b674-106e861acc5f"}</msg>
+<arg>browser=${BROWSER}</arg>
+<arg>headless=False</arg>
+<arg>slowMo=${DELAY}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-11-10T10:25:44.881966" elapsed="0.154562"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2026-11-10T10:25:45.037147" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 720,
+    "width": 1280
+  }
+}</msg>
+<msg time="2026-11-10T10:25:45.041478" level="INFO">Successfully created context. </msg>
+<msg time="2026-11-10T10:25:45.041520" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 720, 'width': 1280}}</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2026-11-10T10:25:45.036736" elapsed="0.004833"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-11-10T10:25:45.700086" level="INFO">Successfully initialized new page object and opened url: about:blank</msg>
+<arg>about:blank</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-11-10T10:25:45.041660" elapsed="0.658742"/>
+</kw>
+<status status="PASS" start="2026-11-10T10:25:44.881811" elapsed="0.818783"/>
+</kw>
+<test id="s1-s2-t1" name="When counter has a nonzero value and it is reset the value becomes zero" line="7">
+<kw name="Go To" owner="Browser">
+<msg time="2026-11-10T10:25:46.227233" level="INFO">Successfully opened URL http://localhost:5001</msg>
+<arg>${HOME_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2026-11-10T10:25:45.709715" elapsed="0.517784"/>
+</kw>
+<kw name="Get Title" owner="Browser">
+<msg time="2026-11-10T10:25:46.234786" level="INFO">Title: 'Laskuri'</msg>
+<arg>==</arg>
+<arg>Laskuri</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2026-11-10T10:25:46.227904" elapsed="0.007032"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-11-10T10:25:46.235827" level="INFO">Clicks the element 'button &gt;&gt; text=Nollaa'.</msg>
+<arg>button &gt;&gt; text=Nollaa</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-11-10T10:25:46.235233" elapsed="0.543619"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-11-10T10:25:46.783281" level="INFO">Clicks the element 'button &gt;&gt; text=Paina'.</msg>
+<arg>button &gt;&gt; text=Paina</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-11-10T10:25:46.781015" elapsed="0.545887"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2026-11-10T10:25:47.359674" level="INFO">Text: ['Ohtulaskuri\nnappia painettu 1 kertaa\nPaina\nNollaa']</msg>
+<arg>body</arg>
+<arg>*=</arg>
+<arg>nappia painettu 1 kertaa</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2026-11-10T10:25:47.328204" elapsed="0.031550"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-11-10T10:25:47.360301" level="INFO">Clicks the element 'button &gt;&gt; text=Nollaa'.</msg>
+<arg>button &gt;&gt; text=Nollaa</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-11-10T10:25:47.359934" elapsed="0.529659"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2026-11-10T10:25:47.922127" level="INFO">Text: ['Ohtulaskuri\nnappia painettu 0 kertaa\nPaina\nNollaa']</msg>
+<arg>body</arg>
+<arg>*=</arg>
+<arg>nappia painettu 0 kertaa</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2026-11-10T10:25:47.890177" elapsed="0.032029"/>
+</kw>
+<status status="PASS" start="2026-11-10T10:25:45.700715" elapsed="2.221642"/>
+</test>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2026-11-10T10:25:48.018816" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-11-10T10:25:47.925192" elapsed="0.093738"/>
+</kw>
+<status status="PASS" start="2026-11-10T10:25:44.879370" elapsed="3.139612"/>
+</suite>
+<status status="PASS" start="2026-11-10T10:25:40.381815" elapsed="7.639683"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Tests" id="s1" pass="2" fail="0" skip="0">Tests</stat>
+<stat name="Tests" id="s1" pass="3" fail="0" skip="0">Tests</stat>
 <stat name="Increment" id="s1-s1" pass="2" fail="0" skip="0">Tests.Increment</stat>
+<stat name="Reset" id="s1-s2" pass="1" fail="0" skip="0">Tests.Reset</stat>
 </suite>
 </statistics>
 <errors>
